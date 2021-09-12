@@ -8,6 +8,10 @@ package com.mycompany.pract1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import com.mycompany.dto.PersonDTO;
 
 /**
  *
@@ -16,7 +20,18 @@ import java.io.InputStreamReader;
 public class LeerDatos {
 //String Nom, Edad, Sexo, Correo,Telefono,Estatura, Peso;
    public static void main(String[] args) throws IOException {
-    boolean ft=false;   
+    boolean ft=false;
+    PersonDTO person = new PersonDTO(); //>jdk 8 inyeccion de dependencias Spring
+    ArrayList<PersonDTO> people = new ArrayList<>();
+    people.add(person);
+    //ciclo [10 - 100] n
+    
+//    for(int i = 0; i<100; i++) {
+//    	
+//    }
+    
+    person.setName("Luis");
+    person.setEmail("luis@gmail.com");
     String Nom="", Edad="", Sexo="", Correo="", Telefono="", Estatura="", Peso="";
     System.out.println("Ingrese Datos");
     BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in)); 
