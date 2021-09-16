@@ -45,10 +45,10 @@ public class PersonDTO {
 	public void setHeight(Double height) {
 		this.height = height;
 	}
-	public Double getWeights() {
+	public Double getWeight() {
 		return weights;
 	}
-	public void setWeights(Double weights) {
+	public void setWeight(Double weights) {
 		this.weights = weights;
 	}
 	
